@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Picker</title>
+    <style>
+
+        body{ background: rgb(252, 237, 223);}
+        main{padding:10px;
+             display: flex;
+             width:100%;
+             height: 100vh;}
+
+        .con1{width:40%}
+        
+        .con2{display: flex;
+              flex-direction: column;
+              width:60%;
+              height: fit-content;
+              row-gap: 10px;}
+        
+        .sub_con21{width:100%;
+            }
+        
+        .sub_con22{width:100%;
+            }
+
+        .sub_con23{width:100%;
+            }
+
+        fieldset{width:90%;
+            background: peachpuff;
+                }
+
+        #text_box{height:500px;
+                  width:450px;
+                  border:none;
+                  box-shadow: 1px 1px 2px 2px black;
+                  outline: none;
+                  background: white;}
+
+        #text_box:hover{
+                  height:500px;
+                  width:450px;
+                  border:none;
+                  box-shadow: -1px -1px 2px 2px black;
+                  outline: none;
+                  }
+
+        .tc,.bc{display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+            gap:20px;}
+
+       .tc button{width:27px;
+                  height: 27px;
+                  border-radius: 50%;
+                  border:none;
+                  box-shadow: 1px 1px 1px 1px;
+                  }
+
+        .tc button:hover{width:33px;
+                  height: 33px;
+                  border-radius: 50%;
+                  cursor: pointer;
+                  }
+
+        .bc button{width:40px;
+                   height: 25px;
+                   border: none;
+                   box-shadow:1px 1px 1px 1px;}
+
+        .bc button:hover{width:45px;
+                  height: 30px;
+                  cursor: pointer;
+                 }
+
+
+        .font-box{display: grid;
+                  grid-template-columns: auto auto auto auto auto auto auto auto;
+                  gap: 20px;
+                  background: peachpuff;}
+
+        .font-box button{padding:5px 10px;
+                         background: white;
+                         border: 0px;}
+
+        .font-box button:hover{background: black;
+                               color:white;
+                               box-shadow: 1px 1px 1px 1px red;
+                               cursor: pointer;
+                              }
+
+        h2{color:rgb(66, 19, 220);
+           font-style: italic;
+           text-align: center;}
+
+        
+    </style>
+</head>
+<body>
+    <h1 align="center" style="color: rgb(190, 24, 51);"><em>Colour and Font Picker</em></h1>
+    <main>       
+        <section class="con1">
+            <h1 contenteditable="true" id="text_box"></h1>
+        </section>
+        <section class="con2">
+            <div class="sub_con21">
+                <fieldset>
+                    <h2>Text Colors</h2>
+                    <div class="tc">
+                        <button id="pu" style="background: purple;"></button>
+                        <button id="by" style="background:blueviolet;"></button>
+                        <button id="mag" style="background: magenta;"></button>
+                        <button id="hp" style="background: hotpink;"></button>
+                        <button id="pi" style="background: pink;"></button>
+                        <button id="r" style="background: red;"></button>
+                        <button id="orr" style="background: orangered;"></button>
+                        <button id="co" style="background: coral;"></button>
+                        <button id="or" style="background: orange;"></button>
+                        <button id="b" style="background: blue;"></button>
+                        <button id="aq" style="background: aqua;"></button>
+                        <button id="mtq" style="background: mediumturquoise;"></button>
+                        <button id="g" style="background: green;"></button>
+                        <button id="te" style="background: teal;"></button>
+                        <button id="ol" style="background: olive;"></button>
+                        <button id="yg" style="background: yellowgreen;"></button>
+                        <button id="gy" style="background: greenyellow;"></button>
+                        <button id="y" style="background: yellow;"></button>
+                        <button id="bl" style="background: black;"></button>
+                        <button id="w" style="background: white;" ></button>
+                        <button id="go" style="background: gold;"></button>
+                        <button id="la" style="background: lavender;"></button>          
+                        <button id="si" style="background: silver;"></button>
+                        <button id="pe" style="background: peru;"></button>
+                        <button id="ma" style="background: maroon;"></button>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="sub_con22">
+                <fieldset>
+                    <h2>Background Colors</h2>
+                    <div class="bc">                       
+                        <button id="pu" style="background: purple;"></button>
+                        <button id="by" style="background:blueviolet;"></button>
+                        <button id="mag" style="background: magenta;"></button>
+                        <button id="hp" style="background: hotpink;"></button>
+                        <button id="pi" style="background: pink;"></button>
+                        <button id="r" style="background: red;"></button>
+                        <button id="orr" style="background: orangered;"></button>
+                        <button id="co" style="background: coral;"></button>
+                        <button id="or" style="background: orange;"></button>
+                        <button id="b" style="background: blue;"></button>
+                        <button id="aq" style="background: aqua;"></button>
+                        <button id="mtq" style="background: mediumturquoise;"></button>
+                        <button id="g" style="background: green;"></button>
+                        <button id="te" style="background: teal;"></button>
+                        <button id="ol" style="background: olive;"></button>
+                        <button id="yg" style="background: yellowgreen;"></button>
+                        <button id="gy" style="background: greenyellow;"></button>
+                        <button id="y" style="background: yellow;"></button>
+                        <button id="bl" style="background: black;"></button>
+                        <button id="w" style="background: white;" ></button>
+                        <button id="go" style="background: gold;"></button>
+                        <button id="la" style="background: lavender;"></button>          
+                        <button id="si" style="background: silver;"></button>
+                        <button id="pe" style="background: peru;"></button>
+                        <button id="ma" style="background: maroon;"></button>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="sub_con23">
+                <fieldset>
+                    <h2>Fonts</h2>
+                    <div class="font-box">
+                        <button style="font-family: 'Arial', sans-serif;">Hello</button>
+                        <button style="font-family: 'Times New Roman', serif;">Hello</button>
+                        <button style="font-family: 'Verdana', sans-serif;">Hello</button>
+                        <button style="font-family: 'Tahoma', sans-serif;">Hello</button>
+                        <button style="font-family: 'Courier New', monospace;">Hello</button>
+                        <button style="font-family: 'Georgia', serif;">Hello</button>
+                        <button style="font-family: 'Comic Sans MS', cursive, sans-serif;">Hello</button>
+                        <button style="font-family: 'Impact', sans-serif;">Hello</button>
+                        <button style="font-family: 'Palatino Linotype', 'Book Antiqua', serif;">Hello</button>
+                        <button style="font-family: 'Lucida Console', monospace;">Hello</button>
+                        <button style="font-family: 'Helvetica', sans-serif;">Hello</button>
+                        <button  style="font-family: 'Trebuchet MS', sans-serif;">Hello</button>
+                        <button style="font-family: 'Brush Script MT', cursive;">Hello</button>
+                        <button style="font-family: 'Lucida Sans', sans-serif;">Hello</button>
+                        <button style="font-family: 'Gill Sans', sans-serif;">Hello</button>
+                        <button style="font-family: 'Franklin Gothic Medium', sans-serif;">Hello</button>
+                        <button style="font-family: 'Century Gothic', sans-serif;
+                        ">Hello</button>
+                        <button style="font-family: 'Rockwell', serif;
+                        ">Hello</button>
+                        <button style="font-family: 'Segoe UI', sans-serif;
+                        ">Hello</button>
+                        <button style="font-family: 'Garamond', serif;
+                        ">Hello</button>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
